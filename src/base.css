@@ -11,3 +11,27 @@ body {
   margin: 0 auto;
   max-width: 15em;
 }
+
+li {
+	list-style-type: none;
+	margin: 5px;
+	border: 1px solid black;
+}
+
+#searchForm {
+	text-align: center;
+}
+
+.results {
+	font-size: 25px;
+	border-bottom: 1px solid black;
+}
+
+.propertyNames {
+	font-family: Arial;
+	color: brown;
+}
+
+#savedGems {
+	margin-bottom: 50px;
+}

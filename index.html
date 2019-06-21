@@ -3,8 +3,23 @@
 <head>
   <title>Ruby Gems search app</title>
   <link rel="stylesheet" href="./src/base.css" />
+  <script type="text/javascript" src="functions.js"></script>
 </head>
-<body>
-  <h1 class="big-lorem-ipsum">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor...</h1>
+<body onload="initialLoad()">
+	<form method="get" action="/api/v1/search.json?query=" id="searchForm">
+	  <div>Query a gem name</div>
+	  <input id="searchBar" placeholder="Enter gem name" name="query">
+	  <button>Search</button>
+	</form>
+
+	<div id="savedGems">
+		<span class='results'>Saved Gems</span>
+		<ul id="storageList"></ul>
+	</div>
+
+	<div id="searchResults">
+		<span class="results">Search Results</span>
+		<ul id="queryList"></ul>
+	</div>
 </body>
 </html>
